@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Flores.Paises.Rusia"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Border BorderBrush="BlanchedAlmond" BorderThickness="2">
+        <StackPanel x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+            <TextBlock Text="Rusia" FontSize="50" TextAlignment="Center"/>
+            <TextBlock Text="Manzanilla" FontSize="30" TextAlignment="Center"/>
+            <TextBlock Text="Matricaria Chamomilla" FontSize="20" TextAlignment="Center" FontStyle="Italic"/>
+            <Image Source="/Imagenes/RusiaChamomile.JPG" Height="300" Width="285" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Border>
+</UserControl>

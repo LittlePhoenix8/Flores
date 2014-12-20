@@ -1,0 +1,124 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Flores.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <Grid.Resources>
+            <Style TargetType="controls:Panorama">
+                <Setter Property="Foreground" Value="black"/>
+            </Style>
+        </Grid.Resources>
+
+        <!--Panorama control-->
+        <controls:Panorama Title="flores de europa">
+            
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="Imagenes/europa.png"/>
+            </controls:Panorama.Background>
+ 
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="NORTE">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Islandia" FontSize="50" Tap="TextBlock_Tap_Islandia"/>
+                        <TextBlock Text="Finlandia" FontSize="50" Tap="TextBlock_Tap_Finlandia" />
+                        <TextBlock Text="Islas Feroe" FontSize="50" Tap="TextBlock_Tap_Feroe" />
+                        <TextBlock Text="Noruega" FontSize="50" Tap="TextBlock_Tap_Noruega" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+ 
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="OESTE">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Escocia" FontSize="50" Tap="TextBlock_Tap_Escocia" />
+                        <TextBlock Text="Francia" FontSize="50" Tap="TextBlock_Tap_Francia" />
+                        <TextBlock Text="Gales" FontSize="50" Tap="TextBlock_Tap_Gales" />
+                        <TextBlock Text="Irlanda" FontSize="50" Tap="TextBlock_Tap_Irlanda" />
+                        <TextBlock Text="Irlanda del Norte" FontSize="50" Tap="TextBlock_Tap_IrlandaNorte" />
+                        <TextBlock Text="Inglaterra" FontSize="50" Tap="TextBlock_Tap_Inglaterra" />
+                        <TextBlock Text="Países Bajos" FontSize="50" Tap="TextBlock_Tap_PaisesBajos" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+
+            <!--Panorama item three-->
+            <controls:PanoramaItem Header="CENTRAL">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Alemania" FontSize="50" Tap="TextBlock_Tap_Alemania" />
+                        <TextBlock Text="Austria" FontSize="50" Tap="TextBlock_Tap_Austria" />
+                        <TextBlock Text="Croacia" FontSize="50" Tap="TextBlock_Tap_Croacia" />
+                        <TextBlock Text="Eslovaquia" FontSize="50" Tap="TextBlock_Tap_Eslovaquia" />
+                        <TextBlock Text="Eslovenia" FontSize="50" Tap="TextBlock_Tap_Eslovenia" />
+                        <TextBlock Text="Estonia" FontSize="50" Tap="TextBlock_Tap_Estonia" />
+                        <TextBlock Text="Hungría" FontSize="50" Tap="TextBlock_Tap_Hungria" />
+                        <TextBlock Text="Letonia" FontSize="50" Tap="TextBlock_Tap_Letonia" />
+                        <TextBlock Text="Lituania" FontSize="50" Tap="TextBlock_Tap_Lituania" />
+                        <TextBlock Text="Polonia" FontSize="50" Tap="TextBlock_Tap_Polonia" />
+                        <TextBlock Text="República Checa" FontSize="50" Tap="TextBlock_Tap_RepCheca" />
+                        <TextBlock Text="Suiza" FontSize="50" Tap="TextBlock_Tap_Suiza" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+
+            <!--Panorama item four-->
+            <controls:PanoramaItem Header="SUR">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="España" FontSize="50" Tap="TextBlock_Tap_Espana" />
+                        <TextBlock Text="Italia" FontSize="50" Tap="TextBlock_Tap_Italia" />
+                        <TextBlock Text="Malta" FontSize="50" Tap="TextBlock_Tap_Malta" />
+                        <TextBlock Text="Mónaco" FontSize="50" Tap="TextBlock_Tap_Monaco" />
+                        <TextBlock Text="Portugal" FontSize="50" Tap="TextBlock_Tap_Portugal" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+
+            <!--Panorama item five-->
+            <controls:PanoramaItem Header="SUDESTE">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Albania" FontSize="50" Tap="TextBlock_Tap_Albania" />
+                        <TextBlock Text="Bosnia-Herzegovina" FontSize="50" Tap="TextBlock_Tap_Bosnia" />
+                        <TextBlock Text="Bulgaria" FontSize="50" Tap="TextBlock_Tap_Bulgaria" />
+                        <TextBlock Text="Chipre" FontSize="50" Tap="TextBlock_Tap_Chipre" />
+                        <TextBlock Text="Grecia" FontSize="50" Tap="TextBlock_Tap_Grecia" />
+                        <TextBlock Text="República de Macedonia" FontSize="50" Tap="TextBlock_Tap_Macedonia" />
+                        <TextBlock Text="Rumania" FontSize="50" Tap="TextBlock_Tap_Rumania" />
+                        <TextBlock Text="Serbia" FontSize="50" Tap="TextBlock_Tap_Serbia" />
+                        <TextBlock Text="Turquía" FontSize="50" Tap="TextBlock_Tap_Turquia" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+
+            <!--Panorama item six-->
+            <controls:PanoramaItem Header="ORIENTAL">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Armenia" FontSize="50" Tap="TextBlock_Tap_Armenia" />
+                        <TextBlock Text="Bielorrusia" FontSize="50" Tap="TextBlock_Tap_Bielorrusia" />
+                        <TextBlock Text="Rusia" FontSize="50" Tap="TextBlock_Tap_Rusia" />
+                        <TextBlock Text="Ucrania" FontSize="50" Tap="TextBlock_Tap_Ucrania" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A61B27FD-FAF7-45B9-BFAC-9920C42972A7}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Flores</RootNamespace>
+    <AssemblyName>Flores</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Flores.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Flores.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Phone.Controls">
+      <HintPath>..\..\..\..\..\Desktop\Apps 3 x 1\Coding4Fun.Phone.Controls\Coding4Fun.Phone.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Albania.xaml.cs">
+      <DependentUpon>Albania.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Alemania.xaml.cs">
+      <DependentUpon>Alemania.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Armenia.xaml.cs">
+      <DependentUpon>Armenia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Austria.xaml.cs">
+      <DependentUpon>Austria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Bielorrusia.xaml.cs">
+      <DependentUpon>Bielorrusia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Bosnia.xaml.cs">
+      <DependentUpon>Bosnia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Bulgaria.xaml.cs">
+      <DependentUpon>Bulgaria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Chipre.xaml.cs">
+      <DependentUpon>Chipre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Croacia.xaml.cs">
+      <DependentUpon>Croacia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Escocia.xaml.cs">
+      <DependentUpon>Escocia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Eslovaquia.xaml.cs">
+      <DependentUpon>Eslovaquia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Eslovenia.xaml.cs">
+      <DependentUpon>Eslovenia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Espana.xaml.cs">
+      <DependentUpon>Espana.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Estonia.xaml.cs">
+      <DependentUpon>Estonia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Feroe.xaml.cs">
+      <DependentUpon>Feroe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Finlandia.xaml.cs">
+      <DependentUpon>Finlandia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Francia.xaml.cs">
+      <DependentUpon>Francia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Gales.xaml.cs">
+      <DependentUpon>Gales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Grecia.xaml.cs">
+      <DependentUpon>Grecia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Hungria.xaml.cs">
+      <DependentUpon>Hungria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Inglaterra.xaml.cs">
+      <DependentUpon>Inglaterra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Irlanda.xaml.cs">
+      <DependentUpon>Irlanda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\IrlandaNorte.xaml.cs">
+      <DependentUpon>IrlandaNorte.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Islandia.xaml.cs">
+      <DependentUpon>Islandia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Italia.xaml.cs">
+      <DependentUpon>Italia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Letonia.xaml.cs">
+      <DependentUpon>Letonia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Lituania.xaml.cs">
+      <DependentUpon>Lituania.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Macedonia.xaml.cs">
+      <DependentUpon>Macedonia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Malta.xaml.cs">
+      <DependentUpon>Malta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Monaco.xaml.cs">
+      <DependentUpon>Monaco.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Noruega.xaml.cs">
+      <DependentUpon>Noruega.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\PaisesBajos.xaml.cs">
+      <DependentUpon>PaisesBajos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Polonia.xaml.cs">
+      <DependentUpon>Polonia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Portugal.xaml.cs">
+      <DependentUpon>Portugal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\RepCheca.xaml.cs">
+      <DependentUpon>RepCheca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Rumania.xaml.cs">
+      <DependentUpon>Rumania.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Rusia.xaml.cs">
+      <DependentUpon>Rusia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Serbia.xaml.cs">
+      <DependentUpon>Serbia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Suiza.xaml.cs">
+      <DependentUpon>Suiza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Turquia.xaml.cs">
+      <DependentUpon>Turquia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paises\Ucrania.xaml.cs">
+      <DependentUpon>Ucrania.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Albania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Alemania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Armenia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Austria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Bielorrusia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Bosnia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Bulgaria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Chipre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Croacia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Escocia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Eslovaquia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Eslovenia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Espana.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Estonia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Feroe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Finlandia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Francia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Gales.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Grecia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Hungria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Inglaterra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Irlanda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\IrlandaNorte.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Islandia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Italia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Letonia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Lituania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Macedonia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Malta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Monaco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Noruega.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\PaisesBajos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Polonia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Portugal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\RepCheca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Rumania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Rusia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Serbia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Suiza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Turquia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paises\Ucrania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SampleData\MainViewModelSampleData.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png" />
+    <Content Include="Imagenes\AlbaniaAmapola.jpg" />
+    <Content Include="Imagenes\AlemaniaCornflower.JPG" />
+    <Content Include="Imagenes\ArmeniaAlthaea.JPG" />
+    <Content Include="Imagenes\AustriaGenciana.JPG" />
+    <Content Include="Imagenes\BielorrusiaLino.JPG" />
+    <Content Include="Imagenes\BosniaHerzegovinaLiliumBosniacum.JPG" />
+    <Content Include="Imagenes\BulgariaDamaskRose.JPG" />
+    <Content Include="Imagenes\ChipreCyprusCyclamen.JPG" />
+    <Content Include="Imagenes\CroaciaIrisCroatica.jpg" />
+    <Content Include="Imagenes\EscociaThistle.jpg" />
+    <Content Include="Imagenes\EslovaquiaRose.JPG" />
+    <Content Include="Imagenes\EsloveniaCarnation.JPG" />
+    <Content Include="Imagenes\EspanaCarnation.jpg" />
+    <Content Include="Imagenes\EstoniaCornflower.JPG" />
+    <Content Include="Imagenes\europa.png" />
+    <Content Include="Imagenes\FinlandiaLilyOfTheValley.JPG" />
+    <Content Include="Imagenes\FranciaIris.JPG" />
+    <Content Include="Imagenes\GalesDaffodil.JPG" />
+    <Content Include="Imagenes\GreciaLaurel.JPG" />
+    <Content Include="Imagenes\HungriaTulip.JPG" />
+    <Content Include="Imagenes\icono1000.png" />
+    <Content Include="Imagenes\icono300.PNG" />
+    <Content Include="Imagenes\InglaterraTudorRose.JPG" />
+    <Content Include="Imagenes\IrlandaShamrock.JPG" />
+    <Content Include="Imagenes\IrlandaNorteFlax.jpg" />
+    <Content Include="Imagenes\IslandiaDryasOctopetala.JPG" />
+    <Content Include="Imagenes\IslasFaroeMarshMarigold.JPG" />
+    <Content Include="Imagenes\ItaliaCyclamen.jpg" />
+    <Content Include="Imagenes\LatviaOxeyeDaisy.JPG" />
+    <Content Include="Imagenes\LituaniaRue.jpg" />
+    <Content Include="Imagenes\MacedoniaWheat.JPG" />
+    <Content Include="Imagenes\MaltaMalteseRockCentaury1.JPG" />
+    <Content Include="Imagenes\MonacoCarnation1.jpg" />
+    <Content Include="Imagenes\NoruegaSaxifragaCotyledon.JPG" />
+    <Content Include="Imagenes\PaisesBajosTulip.JPG" />
+    <Content Include="Imagenes\PolandaRedPoppy.jpg" />
+    <Content Include="Imagenes\PortugalLavender1.JPG" />
+    <Content Include="Imagenes\RepublicaChecaTiliaCordata1.jpg" />
+    <Content Include="Imagenes\RumaniaDogRose.JPG" />
+    <Content Include="Imagenes\RusiaChamomile.JPG" />
+    <Content Include="Imagenes\SerbiaPlum1.jpg" />
+    <Content Include="Imagenes\SuizaEdelweiss.JPG" />
+    <Content Include="Imagenes\TurquiaTulip.JPG" />
+    <Content Include="Imagenes\UcraniaViburnum.JPG" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
